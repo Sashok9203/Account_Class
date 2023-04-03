@@ -10,7 +10,7 @@ namespace Account_Class
 {
     internal class Account
     {
-		private const string _def_email = "default@user";
+		private const string _def_email    = "default@user";
         private const string _def_password = "123Pass";
         private string? _email;
         private string? _password;
