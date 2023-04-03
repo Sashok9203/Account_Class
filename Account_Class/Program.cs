@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            try
+            {
+                Account? ac = new Account("MyEmail@net","123pass");
+                ac.SetAccountInfo();
+                Console.WriteLine(ac.GetAccountInfo());
+            }
+            catch (Exception e) { Console.WriteLine(e.Message);}
         }
     }
 }
